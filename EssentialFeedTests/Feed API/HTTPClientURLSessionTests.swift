@@ -29,17 +29,6 @@ class HTTPClientURLSessionTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func test_getFromURL_createsDataTaskWithURL() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let url = URL(string: "https://any-url.com")!
-        let session = URLSessionSpy()
-        let sut = URLSessionHTTPClient(session: session)
-        sut.get(from: url)
-
-        XCTAssertEqual(session.receivedUrls, [url])
-    }
-
     func test_getFromURL_resumesDataTaskWithURL() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -56,15 +45,13 @@ class HTTPClientURLSessionTests: XCTestCase {
 
     // MARK: Helpers
     private class URLSessionSpy: URLSession {
-        var receivedUrls = [URL]()
         private var stubs = [URL: URLSessionDataTask]()
 
-        func stub(url: URL, task: URLSessionDataTask) {
+        func  stub(url: URL, task: URLSessionDataTask) {
             stubs[url] = task
         }
         
         override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
-            receivedUrls.append(url)
             return stubs[url] ?? FakeURLSessionDataTask()
         }
     }
