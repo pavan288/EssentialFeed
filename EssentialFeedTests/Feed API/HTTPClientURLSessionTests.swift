@@ -25,7 +25,6 @@ class HTTPClientURLSessionTests: XCTestCase {
         URLProtocolStub.observeRequests { request in
             XCTAssertEqual(request.url, url)
             XCTAssertEqual(request.httpMethod, "GET")
-            print("fulfilling")
             expec.fulfill()
         }
 
@@ -176,9 +175,8 @@ class HTTPClientURLSessionTests: XCTestCase {
         static func stub(data: Data?, response: URLResponse?, error: Error?) {
             stub = Stub(data: data, response: response, error: error)
         }
-
+        
         override class func canInit(with request: URLRequest) -> Bool {
-            print(request.url)
             requestObserver?(request)
             return true
         }
