@@ -1,3 +1,3 @@
 # EssentialFeed
 
-[![CI](https://github.com/pavan288/EssentialFeed/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/pavan288/EssentialFeed/actions/workflows/CI.yml)
+[![Build Status](https://app.travis-ci.com/pavan288/EssentialFeed.svg?branch=main)](https://app.travis-ci.com/pavan288/EssentialFeed)
