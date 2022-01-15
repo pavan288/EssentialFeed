@@ -57,12 +57,16 @@ class CodableFeedStore {
     }
 
     func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping FeedStore.InsertionCompletion) {
-        let encoder = JSONEncoder()
-        let codableFeed = feed.map({ CodableFeedImage($0) })
-        let cache = Cache(feed: codableFeed, timestamp: timestamp)
-        let encoded = try! encoder.encode(cache)
-        try! encoded.write(to: storeURL)
-        completion(nil)
+        do {
+            let encoder = JSONEncoder()
+            let codableFeed = feed.map({ CodableFeedImage($0) })
+            let cache = Cache(feed: codableFeed, timestamp: timestamp)
+            let encoded = try encoder.encode(cache)
+            try encoded.write(to: storeURL)
+            completion(nil)
+        } catch {
+            completion(error)
+        }
     }
 }
 
