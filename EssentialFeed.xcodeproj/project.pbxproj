@@ -42,6 +42,7 @@
 		2778F8E726B4065600B45E90 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27373526266B722F008DD992 /* EssentialFeed.framework */; };
 		2778F8ED26B80B1C00B45E90 /* XCTTestCaseMemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778F8DA26B1603B00B45E90 /* XCTTestCaseMemoryLeakTrackingHelper.swift */; };
 		278AB2A8279434F200CDC931 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 278AB2A6279434F200CDC931 /* FeedStore.xcdatamodeld */; };
+		278AB2AD27946D2A00CDC931 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AB2AC27946D2A00CDC931 /* CoreDataHelpers.swift */; };
 		27E8C769269D628C004D03E2 /* HTTPClientURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		2778F8E426B4065600B45E90 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		2778F8E626B4065600B45E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278AB2A7279434F200CDC931 /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
+		278AB2AC27946D2A00CDC931 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientURLSessionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +286,7 @@
 			children = (
 				274B3B3B27940C220010C350 /* CoreDataFeedStore.swift */,
 				278AB2A6279434F200CDC931 /* FeedStore.xcdatamodeld */,
+				278AB2AC27946D2A00CDC931 /* CoreDataHelpers.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278AB2AD27946D2A00CDC931 /* CoreDataHelpers.swift in Sources */,
 				2752C912267F2708006C7ED0 /* FeedItemsMapper.swift in Sources */,
 				27373545266B7343008DD992 /* FeedLoader.swift in Sources */,
 				27662B6F278C35DF00658061 /* RemoteFeedItem.swift in Sources */,
