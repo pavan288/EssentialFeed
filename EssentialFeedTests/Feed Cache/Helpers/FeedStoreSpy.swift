@@ -8,11 +8,6 @@
 import Foundation
 import EssentialFeed
 
-enum RetrievalResult {
-    case success(FeedImage)
-    case failure(Error)
-}
-
 class FeedStoreSpy: FeedStore {
     enum ReceivedMessage: Equatable {
         case deleteCachedFeed
