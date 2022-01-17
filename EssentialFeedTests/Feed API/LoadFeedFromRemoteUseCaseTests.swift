@@ -127,18 +127,14 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
 
-    private func makeItem(id: UUID, location: String? = nil, description: String? = nil, imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
-        let item = FeedItem(id: id, location: location, description: description, imageURL: imageURL)
+    private func makeItem(id: UUID, location: String? = nil, description: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
+        let item = FeedImage(id: id, location: location, description: description, url: imageURL)
         let json = [
             "id": item.id.uuidString,
             "location": item.location,
             "description": item.description,
-            "image": item.imageURL.absoluteString
-        ].reduce(into: [String: Any]()) { acc, e in
-            if let value = e.value {
-                acc[e.key] = value
-            }
-        }
+            "image": item.url.absoluteString
+        ].compactMapValues { $0 }
         return (model: item, json: json)
     }
 
@@ -165,12 +161,12 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     }
 
     private class HTTPClientSpy: HTTPClient {
-        private var messages = [(url: URL, completion: (HTTPClientResult) -> Void)]()
+        private var messages = [(url: URL, completion: (HTTPClient.Result) -> Void)]()
         var requestedURLs: [URL] {
             return messages.map({ $0.url })
         }
 
-        func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
             messages.append((url, completion))
         }
 
@@ -184,7 +180,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
                 statusCode: code,
                 httpVersion: nil,
                 headerFields: nil)!
-            messages[index].completion(.success(data, response))
+            messages[index].completion(.success((data, response)))
         }
     }
 }
