@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,8 @@
 		278AB3312796972A00CDC931 /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 278AB3302796972A00CDC931 /* EssentialFeediOS.docc */; };
 		278AB3372796972B00CDC931 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278AB32D2796972A00CDC931 /* EssentialFeediOS.framework */; };
 		278AB3452796BC0300CDC931 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AB3442796BC0300CDC931 /* FeedViewControllerTests.swift */; };
+		278AB3472796C47300CDC931 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27373526266B722F008DD992 /* EssentialFeed.framework */; platformFilter = ios; };
+		278AB3482796C47300CDC931 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27373526266B722F008DD992 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27E8C769269D628C004D03E2 /* HTTPClientURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +85,28 @@
 			remoteGlobalIDString = 278AB32C2796972A00CDC931;
 			remoteInfo = EssentialFeediOS;
 		};
+		278AB3492796C47300CDC931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2737351D266B722F008DD992 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27373525266B722F008DD992;
+			remoteInfo = EssentialFeed;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		278AB34B2796C47300CDC931 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				278AB3482796C47300CDC931 /* EssentialFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27373526266B722F008DD992 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278AB3472796C47300CDC931 /* EssentialFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +218,7 @@
 				278AB32E2796972A00CDC931 /* EssentialFeediOS */,
 				278AB33A2796972B00CDC931 /* EssentialFeediOSTests */,
 				27373527266B722F008DD992 /* Products */,
+				278AB3462796C47300CDC931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,6 +397,13 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
+		278AB3462796C47300CDC931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -473,10 +505,12 @@
 				278AB3292796972A00CDC931 /* Sources */,
 				278AB32A2796972A00CDC931 /* Frameworks */,
 				278AB32B2796972A00CDC931 /* Resources */,
+				278AB34B2796C47300CDC931 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				278AB34A2796C47300CDC931 /* PBXTargetDependency */,
 			);
 			name = EssentialFeediOS;
 			productName = EssentialFeediOS;
@@ -705,6 +739,12 @@
 			isa = PBXTargetDependency;
 			target = 278AB32C2796972A00CDC931 /* EssentialFeediOS */;
 			targetProxy = 278AB3382796972B00CDC931 /* PBXContainerItemProxy */;
+		};
+		278AB34A2796C47300CDC931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 27373525266B722F008DD992 /* EssentialFeed */;
+			targetProxy = 278AB3492796C47300CDC931 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
