@@ -54,6 +54,7 @@
 		278AB3472796C47300CDC931 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27373526266B722F008DD992 /* EssentialFeed.framework */; platformFilter = ios; };
 		278AB3482796C47300CDC931 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27373526266B722F008DD992 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		278AB34C2796CBB800CDC931 /* XCTTestCaseMemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778F8DA26B1603B00B45E90 /* XCTTestCaseMemoryLeakTrackingHelper.swift */; };
+		278AB34E2796DDF800CDC931 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AB34D2796DDF800CDC931 /* FeedViewController.swift */; };
 		27E8C769269D628C004D03E2 /* HTTPClientURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,7 @@
 		278AB3302796972A00CDC931 /* EssentialFeediOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeediOS.docc; sourceTree = "<group>"; };
 		278AB3362796972A00CDC931 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278AB3442796BC0300CDC931 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
+		278AB34D2796DDF800CDC931 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientURLSessionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -386,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				278AB3302796972A00CDC931 /* EssentialFeediOS.docc */,
+				278AB34D2796DDF800CDC931 /* FeedViewController.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278AB34E2796DDF800CDC931 /* FeedViewController.swift in Sources */,
 				278AB3312796972A00CDC931 /* EssentialFeediOS.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1111,6 +1115,7 @@
 		278AB3422796972B00CDC931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1139,6 +1144,7 @@
 		278AB3432796972B00CDC931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
