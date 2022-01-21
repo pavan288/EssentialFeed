@@ -56,6 +56,7 @@
 		278AB34C2796CBB800CDC931 /* XCTTestCaseMemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778F8DA26B1603B00B45E90 /* XCTTestCaseMemoryLeakTrackingHelper.swift */; };
 		278AB34E2796DDF800CDC931 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AB34D2796DDF800CDC931 /* FeedViewController.swift */; };
 		27E8C769269D628C004D03E2 /* HTTPClientURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */; };
+		27ECBB5E279AB25E00C81F34 /* FeedImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB5D279AB25E00C81F34 /* FeedImageLoader.swift */; };
 		27F1E5272797E94E002A6EF9 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */; };
 		27F1E52A27984180002A6EF9 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,7 @@
 		278AB3442796BC0300CDC931 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		278AB34D2796DDF800CDC931 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		27E8C768269D628C004D03E2 /* HTTPClientURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientURLSessionTests.swift; sourceTree = "<group>"; };
+		27ECBB5D279AB25E00C81F34 /* FeedImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageLoader.swift; sourceTree = "<group>"; };
 		27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -391,10 +393,9 @@
 		278AB32E2796972A00CDC931 /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				27ECBB5C279AB22100C81F34 /* Feed Image Loader */,
+				27ECBB5F279AB28000C81F34 /* Feed UI */,
 				278AB3302796972A00CDC931 /* EssentialFeediOS.docc */,
-				278AB34D2796DDF800CDC931 /* FeedViewController.swift */,
-				27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */,
-				27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -412,6 +413,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27ECBB5C279AB22100C81F34 /* Feed Image Loader */ = {
+			isa = PBXGroup;
+			children = (
+				27ECBB5D279AB25E00C81F34 /* FeedImageLoader.swift */,
+			);
+			path = "Feed Image Loader";
+			sourceTree = "<group>";
+		};
+		27ECBB5F279AB28000C81F34 /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				27ECBB60279AB28600C81F34 /* Controllers */,
+				27ECBB61279AB28E00C81F34 /* Views */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
+		27ECBB60279AB28600C81F34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				278AB34D2796DDF800CDC931 /* FeedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27ECBB61279AB28E00C81F34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */,
+				27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -717,6 +752,7 @@
 			files = (
 				278AB34E2796DDF800CDC931 /* FeedViewController.swift in Sources */,
 				27F1E52A27984180002A6EF9 /* UIView+Shimmering.swift in Sources */,
+				27ECBB5E279AB25E00C81F34 /* FeedImageLoader.swift in Sources */,
 				27F1E5272797E94E002A6EF9 /* FeedImageCell.swift in Sources */,
 				278AB3312796972A00CDC931 /* EssentialFeediOS.docc in Sources */,
 			);
