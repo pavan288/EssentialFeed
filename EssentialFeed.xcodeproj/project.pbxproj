@@ -252,6 +252,8 @@
 		2737351C266B722F008DD992 = {
 			isa = PBXGroup;
 			children = (
+				27ECBB88279D78DD00C81F34 /* FeedViewModel.swift */,
+				27ECBB86279D78CF00C81F34 /* FeedLoadingViewModel.swift */,
 				27373528266B722F008DD992 /* EssentialFeed */,
 				27373533266B722F008DD992 /* EssentialFeedTests */,
 				2778F8E326B4065600B45E90 /* EssentialFeedAPIEndToEndTests */,
