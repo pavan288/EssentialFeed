@@ -773,6 +773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				278AB2AD27946D2A00CDC931 /* CoreDataHelpers.swift in Sources */,
+				27ECBB8E279E882F00C81F34 /* FeedViewModel.swift in Sources */,
 				2752C912267F2708006C7ED0 /* FeedItemsMapper.swift in Sources */,
 				27373545266B7343008DD992 /* FeedLoader.swift in Sources */,
 				27662B6F278C35DF00658061 /* RemoteFeedItem.swift in Sources */,
