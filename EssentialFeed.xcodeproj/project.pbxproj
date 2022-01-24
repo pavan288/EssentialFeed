@@ -75,6 +75,7 @@
 		27ECBB93279E9A1800C81F34 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27ECBB92279E9A1800C81F34 /* Feed.storyboard */; };
 		27ECBB95279E9AA900C81F34 /* FeedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27ECBB94279E9AA900C81F34 /* FeedAssets.xcassets */; };
 		27ECBB97279EBADA00C81F34 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB96279EBADA00C81F34 /* UITableView+Dequeueing.swift */; };
+		27ECBB99279EBC3100C81F34 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB98279EBC3100C81F34 /* UIImageView+Animations.swift */; };
 		27F1E5272797E94E002A6EF9 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */; };
 		27F1E52A27984180002A6EF9 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */; };
 /* End PBXBuildFile section */
@@ -198,6 +199,7 @@
 		27ECBB92279E9A1800C81F34 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		27ECBB94279E9AA900C81F34 /* FeedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FeedAssets.xcassets; sourceTree = "<group>"; };
 		27ECBB96279EBADA00C81F34 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
+		27ECBB98279EBC3100C81F34 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -488,6 +490,7 @@
 				27ECBB92279E9A1800C81F34 /* Feed.storyboard */,
 				27ECBB94279E9AA900C81F34 /* FeedAssets.xcassets */,
 				27ECBB96279EBADA00C81F34 /* UITableView+Dequeueing.swift */,
+				27ECBB98279EBC3100C81F34 /* UIImageView+Animations.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 				27ECBB83279D3CAE00C81F34 /* FeedPresenter.swift in Sources */,
 				27ECBB97279EBADA00C81F34 /* UITableView+Dequeueing.swift in Sources */,
 				27ECBB91279E8A1000C81F34 /* FeedLoadingViewModel.swift in Sources */,
+				27ECBB99279EBC3100C81F34 /* UIImageView+Animations.swift in Sources */,
 				27ECBB85279D61E900C81F34 /* FeedImagePresenter.swift in Sources */,
 				27ECBB79279AC31600C81F34 /* FeedImageCellController.swift in Sources */,
 				27ECBB5E279AB25E00C81F34 /* FeedImageLoader.swift in Sources */,
