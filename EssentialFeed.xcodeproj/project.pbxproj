@@ -205,6 +205,7 @@
 		27ECBB9C279FD38500C81F34 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		27ECBB9F279FD70A00C81F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		27ECBBA1279FD74800C81F34 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		27ECBBA2279FD7C100C81F34 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -708,6 +709,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = 2737351C266B722F008DD992;
 			productRefGroup = 27373527266B722F008DD992 /* Products */;
@@ -915,6 +917,7 @@
 			children = (
 				27ECBB9F279FD70A00C81F34 /* en */,
 				27ECBBA1279FD74800C81F34 /* pt-BR */,
+				27ECBBA2279FD7C100C81F34 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
