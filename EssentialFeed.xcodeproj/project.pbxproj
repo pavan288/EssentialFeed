@@ -77,6 +77,7 @@
 		27ECBB97279EBADA00C81F34 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB96279EBADA00C81F34 /* UITableView+Dequeueing.swift */; };
 		27ECBB99279EBC3100C81F34 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB98279EBC3100C81F34 /* UIImageView+Animations.swift */; };
 		27ECBB9B279FC5B500C81F34 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27ECBB9A279FC5B400C81F34 /* Feed.strings */; };
+		27ECBB9D279FD38500C81F34 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECBB9C279FD38500C81F34 /* FeedViewControllerTests+Localization.swift */; };
 		27F1E5272797E94E002A6EF9 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */; };
 		27F1E52A27984180002A6EF9 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */; };
 /* End PBXBuildFile section */
@@ -202,6 +203,7 @@
 		27ECBB96279EBADA00C81F34 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		27ECBB98279EBC3100C81F34 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		27ECBB9A279FC5B400C81F34 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
+		27ECBB9C279FD38500C81F34 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
 		27F1E5262797E94E002A6EF9 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		27F1E52927984180002A6EF9 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -513,6 +515,7 @@
 			children = (
 				27ECBB6F279AB62800C81F34 /* Helpers */,
 				278AB3442796BC0300CDC931 /* FeedViewControllerTests.swift */,
+				27ECBB9C279FD38500C81F34 /* FeedViewControllerTests+Localization.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -884,6 +887,7 @@
 				278AB3452796BC0300CDC931 /* FeedViewControllerTests.swift in Sources */,
 				27ECBB65279AB3FB00C81F34 /* UIImage+TestHelpers.swift in Sources */,
 				27ECBB71279AB67800C81F34 /* FeedImageCell+TestHelpers.swift in Sources */,
+				27ECBB9D279FD38500C81F34 /* FeedViewControllerTests+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
