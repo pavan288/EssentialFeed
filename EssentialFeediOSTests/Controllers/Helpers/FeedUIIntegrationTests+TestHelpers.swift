@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTest+TestHelpers.swift
+//  FeedUIIntegrationTests+TestHelpers.swift
 //  EssentialFeediOSTests
 //
 //  Created by Pavan Powani on 21/01/22.
