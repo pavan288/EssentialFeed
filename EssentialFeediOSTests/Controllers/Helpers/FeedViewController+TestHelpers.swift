@@ -1,5 +1,5 @@
 //
-//  FeedUIIntegrationTests+TestHelpers.swift
+//  FeedViewController+TestHelpers.swift
 //  EssentialFeediOSTests
 //
 //  Created by Pavan Powani on 21/01/22.
@@ -22,6 +22,10 @@ extension FeedViewController {
         let indexPath = IndexPath(row: row, section: feedImageSection)
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: indexPath)
         return view
+    }
+
+    var errorMessage: String? {
+        return errorView?.message
     }
 
     var isShowingLoadingIndicator: Bool {
