@@ -15,18 +15,30 @@ struct FeedErrorViewModel {
     }
 }
 
+struct FeedLoadingViewModel {
+    let isLoading: Bool
+}
+
 protocol FeedErrorView {
     func display(_ viewModel: FeedErrorViewModel)
 }
 
+protocol FeedLoadingView {
+    func display(_ viewModel: FeedLoadingViewModel)
+}
+
 final class FeedPresenter {
     private let errorView: FeedErrorView
-    init(errorView: FeedErrorView) {
+    private let loadingView: FeedLoadingView
+
+    init(errorView: FeedErrorView, loadingView: FeedLoadingView) {
         self.errorView = errorView
+        self.loadingView = loadingView
     }
 
     func didStartLoadingFeed() {
         errorView.display(.noError)
+        loadingView.display(FeedLoadingViewModel(isLoading: true))
     }
 }
 
@@ -37,30 +49,36 @@ class FeedPresenterTests: XCTestCase {
         XCTAssertTrue(view.messages.isEmpty, "Expected no view messages")
     }
 
-    func test_didStartLoadingFeed_displaysNoErrorMessage() {
+    func test_didStartLoadingFeed_displaysNoErrorMessageAndStartsLoading() {
         let (sut, view) = makeSUT()
         sut.didStartLoadingFeed()
-        XCTAssertEqual(view.messages, [.display(errorMessage: .none)])
+        XCTAssertEqual(view.messages, [.display(errorMessage: .none),
+                                       .display(isLoading: true)])
     }
 
     // MARK: - Helpers
 
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (FeedPresenter, ViewSpy) {
         let view = ViewSpy()
-        let presenter = FeedPresenter(errorView: view)
+        let presenter = FeedPresenter(errorView: view, loadingView: view)
         trackForMemoryLeaks(view, file: file, line: line)
         trackForMemoryLeaks(presenter, file: file, line: line)
         return (presenter, view)
     }
 
-    private class ViewSpy: FeedErrorView {
+    private class ViewSpy: FeedErrorView, FeedLoadingView {
         enum Message: Equatable {
             case display(errorMessage: String?)
+            case display(isLoading: Bool)
         }
         private(set) var messages = [Message]()
-        
+
         func display(_ viewModel: FeedErrorViewModel) {
             messages.append(.display(errorMessage: viewModel.message))
+        }
+
+        func display(_ viewModel: FeedLoadingViewModel) {
+            messages.append(.display(isLoading: viewModel.))
         }
     }
 }
