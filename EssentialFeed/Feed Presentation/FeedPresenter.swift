@@ -5,27 +5,7 @@
 //  Created by Pavan Powani on 29/01/22.
 //
 
-import EssentialFeed
-
-public struct FeedErrorViewModel {
-    public let message: String?
-
-    static var noError: FeedErrorViewModel {
-        return FeedErrorViewModel(message: nil)
-    }
-
-    static func error(message: String) -> FeedErrorViewModel {
-        return FeedErrorViewModel(message: message)
-    }
-}
-
-public struct FeedLoadingViewModel {
-    public let isLoading: Bool
-}
-
-public struct FeedViewModel {
-    public let feed: [FeedImage]
-}
+import Foundation
 
 public protocol FeedErrorView {
     func display(_ viewModel: FeedErrorViewModel)
