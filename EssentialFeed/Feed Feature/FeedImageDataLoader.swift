@@ -1,5 +1,5 @@
 //
-//  FeedImageLoader.swift
+//  FeedImageDataLoader.swift
 //  EssentialFeediOS
 //
 //  Created by Pavan Powani on 21/01/22.
