@@ -9,13 +9,8 @@ import XCTest
 import EssentialFeed
 
 class HTTPClientURLSessionTests: XCTestCase {
-    
-    override func setUp() {
-        URLProtocolStub.startInteceptingRequests()
-    }
-    
     override func tearDown() {
-        URLProtocolStub.stopInteceptingRequests()
+        URLProtocolStub.removeStub()
     }
     
     func test_getFromURL_performsGETRequestFromURL() {
@@ -82,7 +77,11 @@ class HTTPClientURLSessionTests: XCTestCase {
     
     // MARK: Helpers
     private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> HTTPClient {
-        let sut = URLSessionHTTPClient()
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [URLProtocolStub.self]
+        let session = URLSession(configuration: configuration)
+
+        let sut = URLSessionHTTPClient(session: session)
         trackForMemoryLeaks(sut)
         return sut
     }
@@ -173,12 +172,7 @@ class HTTPClientURLSessionTests: XCTestCase {
             stub = Stub(data: nil, response: nil, error: nil, requestObserver: observer)
         }
         
-        static func startInteceptingRequests() {
-            URLProtocol.registerClass(URLProtocolStub.self)
-        }
-        
-        static func stopInteceptingRequests() {
-            URLProtocol.unregisterClass(URLProtocolStub.self)
+        static func removeStub() {
             stub = nil
         }
         
