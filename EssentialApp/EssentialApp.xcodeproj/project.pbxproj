@@ -13,7 +13,6 @@
 		27F3628C27BE35A4001F64C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3628A27BE35A4001F64C0 /* Main.storyboard */; };
 		27F3628E27BE35A6001F64C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F3628D27BE35A6001F64C0 /* Assets.xcassets */; };
 		27F3629127BE35A6001F64C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3628F27BE35A6001F64C0 /* LaunchScreen.storyboard */; };
-		27F3629C27BE35A6001F64C0 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3629B27BE35A6001F64C0 /* EssentialAppTests.swift */; };
 		27F362A627BE35A6001F64C0 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F362A527BE35A6001F64C0 /* EssentialAppUITests.swift */; };
 		27F362A827BE35A6001F64C0 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F362A727BE35A6001F64C0 /* EssentialAppUITestsLaunchTests.swift */; };
 		27F362DB27BE391F001F64C0 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F362D927BE391F001F64C0 /* EssentialFeed.framework */; };
@@ -64,7 +63,6 @@
 		27F3629027BE35A6001F64C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F3629227BE35A6001F64C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F3629727BE35A6001F64C0 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F3629B27BE35A6001F64C0 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
 		27F362A127BE35A6001F64C0 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F362A527BE35A6001F64C0 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
 		27F362A727BE35A6001F64C0 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		27F3629A27BE35A6001F64C0 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				27F3629B27BE35A6001F64C0 /* EssentialAppTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F3629C27BE35A6001F64C0 /* EssentialAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
