@@ -50,6 +50,7 @@
 		27F3633927C62B0F001F64C0 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */; };
 		27F3633B27C62DF8001F64C0 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */; };
 		27F3633D27C635CD001F64C0 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */; };
+		27F3633F27C63623001F64C0 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633E27C63623001F64C0 /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		27F3633E27C63623001F64C0 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				27F362F927C40568001F64C0 /* FeedImageDataLoaderSpy.swift */,
 				27F362FB27C40619001F64C0 /* XCTestCase+FeedImageDataLoader.swift */,
 				27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */,
+				27F3633E27C63623001F64C0 /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				27F362FC27C40619001F64C0 /* XCTestCase+FeedImageDataLoader.swift in Sources */,
 				27F3632C27C62803001F64C0 /* FeedImageCell+TestHelpers.swift in Sources */,
 				27F3632F27C62803001F64C0 /* UIControl+TestHelpers.swift in Sources */,
+				27F3633F27C63623001F64C0 /* InMemoryFeedStore.swift in Sources */,
 				27F3631327C611C6001F64C0 /* SceneDelegateTests.swift in Sources */,
 				27F362EE27C3D5F6001F64C0 /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				27F362FA27C40568001F64C0 /* FeedImageDataLoaderSpy.swift in Sources */,
