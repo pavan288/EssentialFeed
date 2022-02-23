@@ -49,6 +49,7 @@
 		27F3633727C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633427C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift */; };
 		27F3633927C62B0F001F64C0 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */; };
 		27F3633B27C62DF8001F64C0 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */; };
+		27F3633D27C635CD001F64C0 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		27F3633427C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
+		27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				27F362F127C3DD12001F64C0 /* XCTestCase+FeedLoader.swift */,
 				27F362F927C40568001F64C0 /* FeedImageDataLoaderSpy.swift */,
 				27F362FB27C40619001F64C0 /* XCTestCase+FeedImageDataLoader.swift */,
+				27F3633C27C635CD001F64C0 /* HTTPClientStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				27F362EE27C3D5F6001F64C0 /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				27F362FA27C40568001F64C0 /* FeedImageDataLoaderSpy.swift in Sources */,
 				27F362E527C3AB6B001F64C0 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
+				27F3633D27C635CD001F64C0 /* HTTPClientStub.swift in Sources */,
 				27F362E127BE47E2001F64C0 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				27F3632D27C62803001F64C0 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				27F362F027C3DB74001F64C0 /* FeedLoaderStub.swift in Sources */,
