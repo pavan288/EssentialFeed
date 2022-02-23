@@ -50,6 +50,7 @@
 		27F3633127C62803001F64C0 /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3632327C62802001F64C0 /* UIButton+TestHelpers.swift */; };
 		27F3633727C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633427C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift */; };
 		27F3633927C62B0F001F64C0 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */; };
+		27F3633B27C62DF8001F64C0 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		27F3632827C62803001F64C0 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		27F3633427C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		27F3633527C62B0A001F64C0 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
+		27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				27F362E427C3AB6B001F64C0 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				27F362F727C3FF2D001F64C0 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 				27F3631227C611C5001F64C0 /* SceneDelegateTests.swift */,
+				27F3633A27C62DF8001F64C0 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				27F362E127BE47E2001F64C0 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				27F3632D27C62803001F64C0 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				27F362F027C3DB74001F64C0 /* FeedLoaderStub.swift in Sources */,
+				27F3633B27C62DF8001F64C0 /* FeedAcceptanceTests.swift in Sources */,
 				27F362E927C3CA0A001F64C0 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				27F3633927C62B0F001F64C0 /* FeedUIIntegrationTests.swift in Sources */,
 				27F3633727C62B0A001F64C0 /* FeedUIIntegrationTests+Localization.swift in Sources */,
